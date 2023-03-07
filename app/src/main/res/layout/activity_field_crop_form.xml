@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".field.component.FieldCropFormActivity"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Type: "
+                android:gravity="center_vertical"/>
+
+            <Spinner
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_customType"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:visibility="gone"
+            android:hint="Altele" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Sowed at: "
+                android:gravity="center_vertical" />
+
+            <Button
+                android:id="@+id/et_sow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Select date" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Harvested at: "
+                android:gravity="center_vertical" />
+
+            <Button
+                android:id="@+id/et_harvest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Select date" />
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_add_crop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm" />
+
+</LinearLayout>
